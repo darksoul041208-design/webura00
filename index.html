@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Webura — Premium Web Studio</title>
+<meta name="description" content="Webura is a premium web studio crafting bespoke, high-converting websites for ambitious brands. Designed with intent. Delivered in days.">
+<meta name="theme-color" content="#07070A">
+
+<meta property="og:title" content="Webura — Premium Web Studio">
+<meta property="og:description" content="Bespoke websites for ambitious brands. Designed with intent. Delivered in days.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307070A'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' fill='%23D4AF6A' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ GRAIN + GLOW ============ -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+<div class="toast" id="toast" role="status" aria-live="polite"><i aria-hidden="true"></i><span id="toastMsg"></span></div>
+
+<!-- ============ PRELOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <div class="loader__mark">WEBURA</div>
+    <div class="loader__bar"><i></i></div>
+    <div class="loader__num"><span id="loaderNum">00</span></div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo" data-cursor="link">
+    <span class="nav__logo-mark">W</span>
+    <span class="nav__logo-text">WEBURA</span>
+  </a>
+
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#work"     data-cursor="link"><span>Work</span></a>
+    <a href="#services" data-cursor="link"><span>Services</span></a>
+    <a href="#process"  data-cursor="link"><span>Process</span></a>
+    <a href="#team"     data-cursor="link"><span>Team</span></a>
+    <a href="#faq"      data-cursor="link"><span>FAQ</span></a>
+  </nav>
+
+  <div class="nav__right">
+    <span class="status"><i></i> Booking new projects</span>
+    <a href="#contact" class="btn btn--gold btn--sm magnetic" data-cursor="link">Start a project</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu" id="menu">
+  <div class="menu__list">
+    <a href="#work"     data-i="01"><span>Work</span></a>
+    <a href="#services" data-i="02"><span>Services</span></a>
+    <a href="#process"  data-i="03"><span>Process</span></a>
+    <a href="#team"     data-i="04"><span>Team</span></a>
+    <a href="#faq"      data-i="05"><span>FAQ</span></a>
+    <a href="#contact"  data-i="06"><span>Contact</span></a>
+  </div>
+  <div class="menu__foot">
+    <a href="mailto:webura0@gmail.com">webura0@gmail.com</a>
+    <a href="https://www.instagram.com/webu.ra" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__aura" aria-hidden="true"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+
+  <div class="hero__inner wrap">
+    <div class="hero__eyebrow reveal">
+      <span class="rule"></span>
+      <span>Premium web studio · Est. 2025</span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="line"><span class="line__i">WE BUILD</span></span>
+      <span class="line"><span class="line__i">WEBSITES</span></span>
+      <span class="line"><span class="line__i">THAT <em>convert.</em></span></span>
+    </h1>
+
+    <div class="hero__body">
+      <p class="hero__lede reveal">
+        For founders who refuse to look average. For brands that need trust
+        before the first click. Bespoke design, hand-coded — never a template.
+      </p>
+
+      <div class="hero__cta reveal">
+        <a href="#work" class="btn btn--gold magnetic" data-cursor="link">
+          <span>See our work</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll reveal">
+      <span class="hero__scroll-line"></span>
+      <span>Scroll to explore</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Premium web studio</span><i>◆</i>
+    <span>Hand-crafted</span><i>◆</i>
+    <span>Built to convert</span><i>◆</i>
+    <span>7-day delivery</span><i>◆</i>
+    <span>Zero templates</span><i>◆</i>
+    <span>Premium web studio</span><i>◆</i>
+    <span>Hand-crafted</span><i>◆</i>
+    <span>Built to convert</span><i>◆</i>
+    <span>7-day delivery</span><i>◆</i>
+    <span>Zero templates</span><i>◆</i>
+  </div>
+</div>
+
+<!-- ============ STATS ============ -->
+<section class="stats wrap">
+  <div class="stat reveal">
+    <div class="stat__num"><span class="count" data-to="7">0</span></div>
+    <div class="stat__label">Days average delivery</div>
+  </div>
+  <div class="stat reveal">
+    <div class="stat__num"><span class="count" data-to="1">0</span></div>
+    <div class="stat__label">Project shipped</div>
+  </div>
+  <div class="stat reveal">
+    <div class="stat__num"><span class="count" data-to="97">0</span><em>%</em></div>
+    <div class="stat__label">Client retention</div>
+  </div>
+  <div class="stat reveal">
+    <div class="stat__num"><em>∞</em></div>
+    <div class="stat__label">Revision rounds</div>
+  </div>
+</section>
+
+<!-- ============ TRUSTED BY ============ -->
+<section class="logos">
+  <div class="logos__head wrap"><span class="rule"></span> Trusted by</div>
+  <div class="logos__marquee">
+    <div class="logos__track">
+      <span>Aurelia Skincare</span><span>Northbourne</span><span>Dr. Sen Clinic</span><span>Verre Studio</span>
+      <span>Halcyon Living</span><span>Meridian Legal</span><span>Sable &amp; Co.</span><span>Atlas Interiors</span>
+      <span>Aurelia Skincare</span><span>Northbourne</span><span>Dr. Sen Clinic</span><span>Verre Studio</span>
+      <span>Halcyon Living</span><span>Meridian Legal</span><span>Sable &amp; Co.</span><span>Atlas Interiors</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag reveal"><span class="rule"></span> What we build</span>
+      <h2 class="sec-title reveal">Four crafts.<br><em>One obsession.</em></h2>
+      <p class="sec-lede reveal">Every engagement is bespoke — but these are the shapes it usually takes.</p>
+    </div>
+
+    <div class="services">
+      <article class="svc reveal" data-cursor="view">
+        <div class="svc__no">01</div>
+        <h3 class="svc__title">E-Commerce Stores</h3>
+        <p class="svc__text">Catalogue, cart, payments, admin — engineered to convert from day one. Your store will look like you spent ten times more.</p>
+        <div class="svc__meta">Shopify · Headless · Custom builds</div>
+        <span class="svc__glow" aria-hidden="true"></span>
+      </article>
+
+      <article class="svc reveal" data-cursor="view">
+        <div class="svc__no">02</div>
+        <h3 class="svc__title">Brand &amp; Business Sites</h3>
+        <p class="svc__text">A site that earns trust before anyone picks up the phone. Every studio, firm and startup deserves to look premium.</p>
+        <div class="svc__meta">Brands · Studios · Startups · Agencies</div>
+        <span class="svc__glow" aria-hidden="true"></span>
+      </article>
+
+      <article class="svc reveal" data-cursor="view">
+        <div class="svc__no">03</div>
+        <h3 class="svc__title">Clinic &amp; Practice Sites</h3>
+        <p class="svc__text">Bookings, credentials, calm design — patients arrive informed and appointments close themselves.</p>
+        <div class="svc__meta">Doctors · Clinics · Wellness · Dental</div>
+        <span class="svc__glow" aria-hidden="true"></span>
+      </article>
+
+      <article class="svc reveal" data-cursor="view">
+        <div class="svc__no">04</div>
+        <h3 class="svc__title">Landing Pages</h3>
+        <p class="svc__text">One goal. Every pixel working toward it. Built so your ad spend converts and your ROAS finally makes sense.</p>
+        <div class="svc__meta">Campaigns · Launches · Lead gen</div>
+        <span class="svc__glow" aria-hidden="true"></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="section section--work" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag reveal"><span class="rule"></span> Selected work</span>
+      <h2 class="sec-title reveal">Recent<br><em>engagements.</em></h2>
+    </div>
+
+    <div class="work work--solo">
+      <a class="proj proj--wide reveal" href="https://auramun.com" target="_blank" rel="noopener" data-cursor="view">
+        <div class="proj__vis" data-vis="1"><span class="proj__mono">AM</span></div>
+        <div class="proj__row">
+          <div>
+            <div class="proj__cat">Event · Model UN</div>
+            <h3 class="proj__name">auramun.com</h3>
+          </div>
+          <div class="proj__note">Launched in under 7 days</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTO ============ -->
+<section class="manifesto">
+  <div class="wrap">
+    <p class="manifesto__text reveal-words">
+      We don't ship templates. We study the business, then design the one site
+      it should have had all along — <em>quietly expensive, ruthlessly fast, built to last.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag reveal"><span class="rule"></span> The process</span>
+      <h2 class="sec-title reveal">A website<br><em>of mastery.</em></h2>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step__no">01</span>
+        <div class="step__body">
+          <h3>Discovery call</h3>
+          <p>Thirty minutes. We learn your business, your goals, your competitors. No pitch — just a real conversation, and no obligation.</p>
+        </div>
+        <span class="step__time">Day 0</span>
+      </li>
+      <li class="step reveal">
+        <span class="step__no">02</span>
+        <div class="step__body">
+          <h3>Design</h3>
+          <p>Bespoke direction, drawn from scratch. Type, colour, motion and layout chosen for your brand — never pulled from a library.</p>
+        </div>
+        <span class="step__time">Days 1–3</span>
+      </li>
+      <li class="step reveal">
+        <span class="step__no">03</span>
+        <div class="step__body">
+          <h3>Build &amp; refine</h3>
+          <p>Hand-coded, fast, accessible. Unlimited revision rounds until every pixel feels exactly right — revisions are part of the process.</p>
+        </div>
+        <span class="step__time">Days 4–6</span>
+      </li>
+      <li class="step reveal">
+        <span class="step__no">04</span>
+        <div class="step__body">
+          <h3>Launch &amp; support</h3>
+          <p>We handle deployment, domain and analytics, and we're on call through your entire launch day. Then we stay reachable.</p>
+        </div>
+        <span class="step__time">Day 7</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ BIG NUMBER ============ -->
+<section class="bignum">
+  <div class="wrap bignum__inner">
+    <div class="bignum__label reveal">Speed of delivery</div>
+    <div class="bignum__val reveal"><span class="count" data-to="7">0</span></div>
+    <div class="bignum__sub reveal">Days · brief to live website</div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="section section--team" id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag reveal"><span class="rule"></span> Cast &amp; crew</span>
+      <h2 class="sec-title reveal">Two builders.<br><em>One standard.</em></h2>
+    </div>
+
+    <div class="team">
+      <article class="member reveal">
+        <div class="member__mono" aria-hidden="true">SY</div>
+        <div class="member__body">
+          <h3 class="member__name">Shikhar Yadav</h3>
+          <div class="member__role">Founder</div>
+        </div>
+      </article>
+
+      <article class="member reveal">
+        <div class="member__mono" aria-hidden="true">HY</div>
+        <div class="member__body">
+          <h3 class="member__name">Harshit Yadav</h3>
+          <div class="member__role">Co-founder</div>
+        </div>
+      </article>
+    </div>
+
+    <figure class="ethos reveal">
+      <blockquote>Anyone can ship quickly. We would rather ship something that still looks expensive five years from now.</blockquote>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============
+     Switched off until there are real client quotes to show.
+
+     TO TURN IT BACK ON
+       1. Delete this comment's opening line and the closing marker that
+          follows the section below.
+       2. Swap the two placeholder figures for your own quotes.
+       3. The strip scrolls on a loop, so your full set of quotes has to
+          appear TWICE, back to back, in the same order. Three real quotes
+          means six figures. Skip the duplicate and the strip visibly jumps
+          each time it wraps.
+
+     Styling is already in place (.quotes / .quote in styles.css), so this
+     will look right the moment it is uncommented.
+
+<section class="section section--quotes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag reveal"><span class="rule"></span> What clients say</span>
+      <h2 class="sec-title reveal">Trusted by<br><em>builders.</em></h2>
+    </div>
+  </div>
+
+  <div class="quotes">
+    <div class="quotes__track">
+
+      <figure class="quote">
+        <blockquote>First quote. One or two sentences reads best.</blockquote>
+        <figcaption><strong>Client name</strong><span>Industry · Role</span></figcaption>
+      </figure>
+
+      <figure class="quote">
+        <blockquote>First quote. One or two sentences reads best.</blockquote>
+        <figcaption><strong>Client name</strong><span>Industry · Role</span></figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+-->
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag reveal"><span class="rule"></span> Common questions</span>
+      <h2 class="sec-title reveal">Everything you<br><em>need to know.</em></h2>
+    </div>
+
+    <div class="faq">
+      <details class="fq reveal">
+        <summary><span class="fq__no">01</span><span class="fq__q">How does 7-day delivery actually work?</span><span class="fq__ic"></span></summary>
+        <div class="fq__a"><p>Day 1 is a detailed brief call. Day 2 brings wireframes. Days 3–4 deliver the full design for approval. Days 5–7 cover development, QA and launch. Most projects go live in six days — seven is our ceiling, not our average.</p></div>
+      </details>
+
+      <details class="fq reveal">
+        <summary><span class="fq__no">02</span><span class="fq__q">What's included in a build?</span><span class="fq__ic"></span></summary>
+        <div class="fq__a"><p>Bespoke design with zero templates, a mobile-first responsive build, on-page SEO, performance optimisation, hosting setup, analytics, and 30 days of post-launch support. Payment gateways and e-commerce catalogues are scoped per project — we'll quote them on the call.</p></div>
+      </details>
+
+      <details class="fq reveal">
+        <summary><span class="fq__no">03</span><span class="fq__q">Do you use templates or page builders?</span><span class="fq__ic"></span></summary>
+        <div class="fq__a"><p>Never. Every Webura site is designed from scratch and hand-coded. No marketplace themes, no drag-and-drop builders. That's why our sites load faster, rank better, and look nothing like anyone else's.</p></div>
+      </details>
+
+      <details class="fq reveal">
+        <summary><span class="fq__no">04</span><span class="fq__q">How many revisions do I get?</span><span class="fq__ic"></span></summary>
+        <div class="fq__a"><p>Unlimited rounds within the build window. We'd rather spend an extra afternoon getting a detail right than hand over something you merely tolerate. Revisions are part of the price, never an add-on.</p></div>
+      </details>
+
+      <details class="fq reveal">
+        <summary><span class="fq__no">05</span><span class="fq__q">What happens after the site goes live?</span><span class="fq__ic"></span></summary>
+        <div class="fq__a"><p>An optional monthly support plan covers unlimited content edits, design tweaks, SEO upkeep and priority access to the team. We become your on-call web department — most clients keep us on for the long term.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="contact">
+  <div class="cta__aura" aria-hidden="true"></div>
+  <div class="wrap cta__inner">
+    <span class="tag reveal"><span class="rule"></span> Get started</span>
+    <h2 class="cta__title reveal">Begin your<br><em>website.</em></h2>
+    <p class="cta__lede reveal">From idea to live site in seven days. Book a free strategy call — no pitch, no obligation.</p>
+    <div class="cta__row reveal">
+      <a href="tel:+918630503262" data-display="8630503262" class="btn btn--gold btn--lg magnetic" data-cursor="link">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.6 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2Z"/></svg>
+        <span>Call on 8630503262</span>
+      </a>
+      <a href="mailto:webura0@gmail.com" class="cta__mail" data-cursor="link">webura0@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <div class="foot__logo">WEBURA</div>
+        <p>A premium web studio building bespoke, high-converting websites for ambitious brands.</p>
+      </div>
+      <div class="foot__cols">
+        <div class="foot__col">
+          <h4>Studio</h4>
+          <a href="#work" data-cursor="link">Work</a>
+          <a href="#services" data-cursor="link">Services</a>
+          <a href="#process" data-cursor="link">Process</a>
+          <a href="#team" data-cursor="link">Team</a>
+          <a href="#faq" data-cursor="link">FAQ</a>
+        </div>
+        <div class="foot__col">
+          <h4>Connect</h4>
+          <a href="https://www.instagram.com/webu.ra" target="_blank" rel="noopener" data-cursor="link">Instagram</a>
+          <a href="mailto:webura0@gmail.com" data-cursor="link">Email</a>
+          <a href="tel:+918630503262" data-display="8630503262" data-cursor="link">Phone</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot__word" aria-hidden="true">WEBURA</div>
+
+    <div class="foot__bar">
+      <span>© <span id="yr">2026</span> Webura. All rights reserved.</span>
+      <span>Designed &amp; built in-house</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.vercel
+node_modules
+_responsive-test.html
+.DS_Store
+Thumbs.db
+*.zip
